@@ -5,7 +5,6 @@ body {
 }
 
 .search-box {
-<<<<<<< HEAD
  position: absolute;
  top: 50%;
  left: 80%;
@@ -43,42 +42,6 @@ body {
  transition: 0.4s;
  color: white;
  cursor: pointer;
-=======
-    position: absolute;
-    top: 50%;
-    left: 86%;
-    transform: translate(-50%, -50%);
-    background: #eaeef3;
-    height: 40px;
-    border-radius: 40px;
-    padding: 0px;
-}
-
-.search-box:hover>.search-txt {
-    width: 240px;
-    padding: 0 6px;
-    margin-left: 70px;
-}
-
-.search-box:hover>.search-btn {
-    background: white;
-    color: black;
-}
-
-.search-btn {
-    color: #070504;
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #2f3640;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.4s;
-    color: white;
-    cursor: pointer;
->>>>>>> 075c74fcb08115bb6b0b36e50b737493540505be
 }
 
 .search-btn>i {
@@ -219,50 +182,11 @@ img {
 
 /*sidebar*/
 
-<<<<<<< HEAD
 
 .tabby{
   font-size: 20px;
   margin-top: 20px;
   
-=======
-.sidenav {
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 120px;
-    right: 10px;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 8px 0;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2196F3;
-    display: block;
-}
-
-.sidehd {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: rgb(2, 2, 2);
-    display: block;
-    font-weight: bold;
-}
-
-.sidenav a:hover {
-    color: #064579;
-}
-
-.tabby {
-    font-size: 20px;
-    margin-top: 15px;
-
->>>>>>> 075c74fcb08115bb6b0b36e50b737493540505be
 }
 
 .navvy {
@@ -471,3 +395,12 @@ footer {
     }
 }
 
+
+
+.products:hover,.products1:hover {
+    box-shadow: 5px 5px 8px grey;
+}
+
+.products1 {
+    border-radius: 30px;
+}
