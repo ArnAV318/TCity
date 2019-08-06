@@ -5,6 +5,45 @@ body {
 }
 
 .search-box {
+<<<<<<< HEAD
+ position: absolute;
+ top: 50%;
+ left: 80%;
+ transform: translate(-50%, -50%);
+ background: #eaeef3;
+ height: 40px;
+ border-radius: 40px;
+ padding: 0px;
+}
+
+.search-box:hover > .search-txt {
+ width: 210px;
+ padding: 0 6px;
+ margin-left: 10px;
+
+}
+
+
+
+.search-box:hover > .search-btn {
+ background: white;
+ color: black;
+}
+
+.search-btn {
+ color: #070504;
+ float: right;
+ width: 40px;
+ height: 40px;
+ border-radius: 50%;
+ background: navy;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.4s;
+ color: white;
+ cursor: pointer;
+=======
     position: absolute;
     top: 50%;
     left: 86%;
@@ -39,6 +78,7 @@ body {
     transition: 0.4s;
     color: white;
     cursor: pointer;
+>>>>>>> 075c74fcb08115bb6b0b36e50b737493540505be
 }
 
 .search-btn>i {
@@ -179,6 +219,13 @@ img {
 
 /*sidebar*/
 
+<<<<<<< HEAD
+
+.tabby{
+  font-size: 20px;
+  margin-top: 20px;
+  
+=======
 .sidenav {
     width: 200px;
     position: fixed;
@@ -215,6 +262,7 @@ img {
     font-size: 20px;
     margin-top: 15px;
 
+>>>>>>> 075c74fcb08115bb6b0b36e50b737493540505be
 }
 
 .navvy {
