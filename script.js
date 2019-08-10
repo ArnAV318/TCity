@@ -1,22 +1,38 @@
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+var currstate=false
+function toggley() {
+  if(currstate==false) {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    var els=document.getElementsByClassName("droppy");
+    [...els].forEach((element, index, array) => {
+      element.style.marginLeft= "20px";
+  });
+    currstate=true;
+    document.getElementById("trial").innerHTML = "<";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  else {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.getElementById("trial").innerHTML = ">";
+    currstate=false;
   }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
+} 
+console.log(document.getElementsByClassName("jumbotron"));
+setInterval(function() {
+  scrolleyy();
+},800);
+function scrolleyy() {
+  if(window.scrollY>=60) {
+    document.getElementById("mySidebar").style.top="0px";
+    document.getElementsByClassName("openbtn")[0].style.top="0px";
+    
+  }
+  else {
+    document.getElementById("mySidebar").style.top="60px";
+    document.getElementsByClassName("openbtn")[0].style.top="60px";
+    
+    
+  }
+  console.log(window.scrollY)
 }
-
-
-
