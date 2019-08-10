@@ -404,3 +404,7 @@ footer {
 .products1 {
     border-radius: 30px;
 }
+
+.signin {
+    display: hidden;
+}
