@@ -26,11 +26,11 @@ body {
 
 .search-box:hover > .search-btn {
  background: white;
- color: black;
+ color: rgb(0, 0, 0);
 }
 
 .search-btn {
- color: #070504;
+ color: #070505;
  float: right;
  width: 40px;
  height: 40px;
@@ -405,6 +405,62 @@ footer {
     border-radius: 30px;
 }
 
-.signin {
-    display: hidden;
+.ini {
+    font-size:23px;
 }
+
+.dresults {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rating1,.rating2 {
+    
+    
+    opacity: 0.9;
+    
+}
+.rating1 {
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.rating2 {
+    width: 30px;
+    font-size:15px;
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+  }
+
+.center {
+    text-align: center;
+  }
+  
+.pagination {
+    display: inline-block;
+  }
+  
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    box-shadow: 2px 2px grey;
+    margin: 0 10px;
+  }
+  
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+  }
+
+.pagination-button:active {
+    box-shadow: 0 0 #666;
+    transform: translateY(4px);
+  }
