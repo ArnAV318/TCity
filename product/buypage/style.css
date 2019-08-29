@@ -560,4 +560,8 @@ img {
   background: rgb(245, 245, 245);
   
 }
+
+.head {
+  background-image: linear-gradient(to right, rgba(255,0,0,0) 30%, #2c292f 100%);
+}
   
