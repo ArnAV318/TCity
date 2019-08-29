@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MemSite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	
+	<!---->
+	<nav class="navbar navbar-expand-lg navbar-dark navvy" style="background-color: navy">
+   	
+  		<ul class="navbar-nav mr-auto">
+        <li >
+           <a href="#!" class="brand-logo ">    
+              <svg height="80" width="100" style="margin-top:10px;" >
+                            <defs>
+                              <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%"
+                                style="stop-color:rgb(0,191,255);stop-opacity:1" />
+                                <stop offset="100%"
+                                style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                              </linearGradient>
+                            </defs>
+                            <ellipse cx="50" cy="35" rx="42" ry="25" fill="url(#grad1)" />
+                            <text fill="#ffffff" font-size="20" font-family="Verdana"
+                            x="25" y="43">TCity</text>
+                          Sorry, your browser does not support inline SVG.
+                          </svg></a>
+        </li>
+    		<li class="nav-item ">
+      			<a class="nav-link tabby text-white" href="/memsite/try.php">Home</a>
+    		</li>
+    		<li class="nav-item ">
+      			<a class="nav-link tabby text-white" href="#">Reviews</a>
+    		</li>
+    		<li class="nav-item ">
+    		    <a class="nav-link tabby text-white" href="#">Previews</a>
+    		</li>
+    		<li class="nav-item ">
+    		    <a class="nav-link tabby text-white" href="#">About</a>
+    		</li>
+  		</ul>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item" style="margin-top:5px;" >
+          <a class="nav-link text-white" href=""><i class="material-icons">person</i></a>
+        </li>
+        <li class="nav-item" style="margin-top:5px;" >
+          <a class="nav-link text-white" href=""><i class="material-icons">shopping_cart</i></a> 
+        </li>  
+        
+        <li class="nav-item">
+				  <form class="search-box">
+            <input type="text" name="" class="search-txt" placeholder="Type to search"/>
+            <a href="#" class="search-btn" >
+              <i class="material-icons">search</i>
+            </a>
+				</li>
+        
+      <ul class="navbar-nav ">
+      </ul>
+	</nav>
+	
+<main>
+<div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field">
+        <button class="promo-code-cta">Apply</button>
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="../../tv.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">4</span> x Eliza J</strong> Lace Sleeve Cuff Dress</h1>
+            <p><strong>Navy, Size 18</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">26.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">104.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img src="../../tv2.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1><strong><span class="item-quantity">1</span> x Whistles</strong> Amella Lace Midi Dress</h1>
+            <p><strong>Navy, Size 10</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price">26.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field">
+        </div>
+        <div class="subtotal">26.00</div>
+        <div class="remove">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Collection</option>
+             <option value="first-class">Royal Mail 1st Class</option>
+             <option value="second-class">Royal Mail 2nd Class</option>
+             <option value="signed-for">Royal Mail Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">130.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+  </main>
+  
+  
+
+    
+ 
+
+
+
+
+<footer class="footer-distributed">
+ 
+            <div class="footer-left">
+                <svg height="80" width="100" style="display:inline-block;">
+                          <defs>
+                            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                              <stop offset="0%"
+                              style="stop-color:rgb(0,191,255);stop-opacity:1" />
+                              <stop offset="100%"
+                              style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                            </linearGradient>
+                          </defs>
+                          <ellipse cx="50" cy="35" rx="42" ry="25" fill="url(#grad1)" />
+                          <text fill="#ffffff" font-size="20" font-family="Verdana"
+                          x="25" y="43">TCity</text>
+                        Sorry, your browser does not support inline SVG.
+                        </svg></a>
+                <h3>About <span>TCity</span></h3>
+
+                <p class="footer-links">
+                    <a href="#">Home</a> |
+                    <a href="#">Blog</a> |
+                    <a href="#">About</a> |
+                    <a href="#">Contact</a>
+                </p>
+
+                <p class="footer-company-name">© 2019 TCity Pvt. Ltd.</p>
+            </div>
+
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>309 - Rupa Solitaire,
+                   Bldg. No. A - 1, Sector - 1</span> Mahape, Navi Mumbai - 400710</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 22-27782183</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@eduonix.com">support@tcity.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>About the company</span> We offer platform for business to reach to the potential customer.</p>
+                <div class="footer-icons">
+                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
