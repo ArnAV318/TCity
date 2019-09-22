@@ -443,7 +443,7 @@ img {
       -webkit-animation-duration: .3s;
               animation-duration: .3s; }
   
-  .card {
+  .card-main {
     margin-top: 50px;
     background: #eee;
     padding: 3em;
@@ -565,3 +565,7 @@ img {
   background-image: linear-gradient(to right, rgba(255,0,0,0) 30%, #2c292f 100%);
 }
   
+.comment {
+  margin  : 10px;
+  font-size: 12px;
+}
