@@ -1,0 +1,170 @@
+{% extends "layout.html" %}
+
+{% block head %}
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+      
+    {% endblock %}
+{% block content %}
+	
+
+  <div id="mySidebar" class="sidebar">
+  <form>
+  <p class="sideyh droppy text-white">
+    Filters
+  </p>
+  <select class="droppy" name="Brand">
+    <option value="volvo">Samsung</option>
+    <option value="saab">oppo</option>
+    <option value="fiat">vivo</option>
+    <option value="audi">apple</option>
+  </select>
+  <select class="droppy" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  <select class="droppy" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+  </form>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="toggley()" id="trial">></button>
+  
+
+    
+ 
+
+
+<div class="jumbotron middle"  >
+<div class="header">
+<p class="ini">
+  Displaying results for <span class="dresults">Samsung smart led tv</span>
+</p>
+</div>        
+        
+<div class="card-deck">
+  <div class="card border-dark products">
+    <img class="card-img-top" src="./static/tv.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title font-weight-bold">Samsung OLED 55 inch tv</h6>
+      <p class="card-text">Colour enriched tv to dive in.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+      <p class="card-text">
+        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating2 ">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></span>
+      </p>
+    </div>
+  </div>
+  <div class="card border-dark products">
+    <img class="card-img-top" src="./static/tv2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title font-weight-bold">Samsung OLED 55 inch tv</h6>
+      <p class="card-text">Colour enriched tv to dive in.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+      <p class="card-text">
+        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating2 ">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></span>
+      </p>
+    </div>
+  </div>
+  <div class="card border-dark products">
+    <img class="card-img-top" src="./static/tv.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title font-weight-bold">Samsung OLED 55 inch tv</h6>
+      <p class="card-text">Colour enriched tv to dive in.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+      <p class="card-text">
+        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating2 ">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></span>
+      </p>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="card-deck">
+  <div class="card border-dark products">
+    <img class="card-img-top" src="./static/tv.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title font-weight-bold">Samsung OLED 55 inch tv</h6>
+      <p class="card-text">Colour enriched tv to dive in.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+      <p class="card-text">
+        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating2 ">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></span>
+      </p>
+    </div>
+  </div><div class="card border-dark products">
+    <img class="card-img-top" src="./static/tv.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title font-weight-bold">Samsung OLED 55 inch tv</h6>
+      <p class="card-text">Colour enriched tv to dive in.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+      <p class="card-text">
+        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating2 ">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></span>
+      </p>
+    </div>
+  </div><div class="card border-dark products">
+    <img class="card-img-top" src="./static/tv.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h6 class="card-title font-weight-bold">Samsung OLED 55 inch tv</h6>
+      <p class="card-text">Colour enriched tv to dive in.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+      <p class="card-text">
+        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating2 ">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span></span>
+      </p>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+<div class="center">
+  <div class="pagination">
+  <a href="#" class="border border-light pagination-button">&laquo;</a>
+  <a href="#" class="border border-light pagination-button">1</a>
+  <a href="#" class="active pagination-button pagination-button">2</a>
+  <a href="#" class="border border-light pagination-button">3</a>
+  <a href="#" class="border border-light pagination-button">4</a>
+  <a href="#" class="border border-light pagination-button">5</a>
+  <a href="#" class="border border-light pagination-button">6</a>
+  <a href="#" class="border border-light pagination-button">&raquo;</a>
+  </div>
+</div>
+
+</div>
+
+
+{% endblock content %}
