@@ -1,0 +1,18 @@
+.about_container {
+  background-image: url('https://mdbootstrap.com/img/Photos/Others/images/91.jpg');
+  background-repeat: no-repeat; background-size: cover; background-position: center center;
+  min-height: 300px;
+  padding-top: 5%;
+}
+.map_container{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right:0%;
+  padding-right:0%;
+  width:100%;
+}
+.add_adjust{
+  margin-left:1%;
+  margin-top:2%;
+  padding-left:1%;
+}
