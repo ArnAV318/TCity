@@ -17,7 +17,7 @@ def create_app():
     app = Flask(__name__)
 
     app.config.from_object(Config)
-
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
     db.init_app(app)
     bcrypt.init_app(app)
     login_manager.init_app(app)
