@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-    {% block head %}
-        
-      {% endblock %}
+    
+    {% block head%}
+    {% endblock %}
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -68,16 +68,16 @@
             <a href="#" class="search-btn" >
               <i class="material-icons">search</i>
             </a>
+          </form>
 				</li>
         
       <ul class="navbar-nav ">
       </ul>
 	</nav>
+	{% block content %}
+  {% endblock %}
 
-    {% block content %}{% endblock %}
-
-
-    <footer class="footer-distributed">
+  <footer class="footer-distributed">
  
             <div class="footer-left">
                 <svg height="80" width="100" style="display:inline-block;">
@@ -137,8 +137,7 @@
 
 
 
-        <script type = "text/javascript" 
-         src = "{{ url_for('static', filename = 'script.js') }}" ></script>
+        
 </body>
 
 </html>
