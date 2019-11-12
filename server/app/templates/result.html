@@ -83,6 +83,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span></span>
       </p>
+      <a href="{{ url_for('buypage.buypage',prod= product.pid) }}" class="stretched-link gonow">Go now!</a>
     </div>
   </div>
   {% endif %}
@@ -98,16 +99,21 @@
 
 <div class="center">
   <div class="pagination">
-  <a href="#" class="border border-light pagination-button">&laquo;</a>
-  <a href="#" class="border border-light pagination-button">1</a>
-  <a href="#" class="active pagination-button pagination-button">2</a>
-  <a href="#" class="border border-light pagination-button">3</a>
-  <a href="#" class="border border-light pagination-button">4</a>
-  <a href="#" class="border border-light pagination-button">5</a>
-  <a href="#" class="border border-light pagination-button">6</a>
-  <a href="#" class="border border-light pagination-button">&raquo;</a>
+    {% for page_num in product.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+      {% if page_num %}
+        {% if product.page == page_num %}
+          <a class="btn btn-primary mb-4" href="{{ url_for('resultpage.resultpage', page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a class="btn btn-outline-primary mb-4" href="{{ url_for('resultpage.resultpage', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...
+      {% endif %}
+    {% endfor %}
   </div>
 </div>
+
+
 
 </div>
 
