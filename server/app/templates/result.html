@@ -48,7 +48,7 @@
   Displaying results for <span class="dresults">Samsung smart led tv</span>
 </p>
 </div>        
-{% for a in pproduct %}
+{% for a in listy %}
 <div class="card-deck">
   {% for product in a %}
   {% if product == 0 %}
@@ -70,12 +70,12 @@
   </div>
   {% else %}
     <div class="card border-dark products" >
-    <img class="card-img-top" src="./static/tv.jpg" alt="Card image cap">
+    <img class="card-img-top" src="{{product[1].path}}" alt="Card image cap">
     <div class="card-body">
-      <h6 class="card-title font-weight-bold">{{ product.title }}</h6>
+      <h6 class="card-title font-weight-bold">{{ product[0].title }}</h6>
       
       <p class="card-text">
-        <span class="rating1">Price: Rs.75,000</span>
+        <span class="rating1">Price: Rs.{{product[0].price}}</span>
         <span class="rating2 ">
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star checked"></span>
@@ -83,7 +83,7 @@
           <span class="fa fa-star checked"></span>
           <span class="fa fa-star"></span></span>
       </p>
-      <a href="{{ url_for('buypage.buypage',prod= product.pid) }}" class="stretched-link gonow">Go now!</a>
+      <a href="{{ url_for('buypage.buypage',prod= product[0].pid) }}" class="stretched-link gonow">Go now!</a>
     </div>
   </div>
   {% endif %}

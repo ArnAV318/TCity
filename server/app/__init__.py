@@ -9,7 +9,7 @@ from app.config import Config
 db = SQLAlchemy()
 bcrypt = Bcrypt()
 login_manager = LoginManager()
-#login_manager.login_view = 'users.login'
+login_manager.login_view = 'loginpage.loginpage'
 #login_manager.login_message_category = 'info'
 
 
@@ -29,11 +29,13 @@ def create_app():
     from app.cartpage.cart import cart
     from app.homepage.home import home
     from app.inputdata.inputdata import input
+    from app.login.login import login
     app.register_blueprint(result)
     app.register_blueprint(about)
     app.register_blueprint(buy)
     app.register_blueprint(cart)
     app.register_blueprint(home)
     app.register_blueprint(input)
+    app.register_blueprint(login)
     return app
     

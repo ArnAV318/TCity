@@ -10,17 +10,17 @@
             <div class="col" >
                 <div class="sticky-top">    
                 <div class="preview-pic tab-content">
-          <div class="tab-pane active" id="pic-1"><img data-toggle="modal" data-target="#myModal" src="{{ url_for('static', filename='img/picy.jpg') }}" /></div>
-                            <div class="tab-pane" id="pic-2"><img data-toggle="modal" data-target="#myModal" src="{{ url_for('static', filename='img/img1.jpg') }}" /></div>
-                            <div class="tab-pane" id="pic-3"><img data-toggle="modal" data-target="#myModal" src="{{ url_for('static', filename='img/img2.jpg') }}" /></div>
+          <div class="tab-pane active img-magnifier-container" id="pic-1"><img id="myimage0"  src="{{ url_for('static', filename='img/picy.jpg') }}" /></div>
+                            <div class="tab-pane " id="pic-2"><img   src="{{ url_for('static', filename='img/img1.jpg') }}" /></div>
+                            <div class="tab-pane img-magnifier-container" id="pic-3"><img data-toggle="modal" data-target="#myModal" src="{{ url_for('static', filename='img/img2.jpg') }}" /></div>
                             <div class="tab-pane" id="pic-4"><img data-toggle="modal" data-target="#myModal" src="{{ url_for('static', filename='img/img3.jpg') }}" /></div>
                             <div class="tab-pane" id="pic-5"><img data-toggle="modal" data-target="#myModal" src="{{ url_for('static', filename='img/picy.jpg') }}" /></div>
                           </div>
                           <ul class="preview-thumbnail nav nav-tabs">
                             <li class="active"><a data-target="#pic-1" data-toggle="tab"><img src="{{ url_for('static', filename='img/picy.jpg') }}" /></a></li>
-                            <li><a data-target="#pic-2" data-toggle="tab"><img src="{{ url_for('static', filename='img/picy.jpg') }}" /></a></li>
-                            <li><a data-target="#pic-3" data-toggle="tab"><img src="{{ url_for('static', filename='img/picy.jpg') }}" /></a></li>
-                            <li><a data-target="#pic-4" data-toggle="tab"><img src="{{ url_for('static', filename='img/picy.jpg') }}" /></a></li>
+                            <li><a data-target="#pic-2" data-toggle="tab"><img src="{{ url_for('static', filename='img/img1.jpg') }}" /></a></li>
+                            <li><a data-target="#pic-3" data-toggle="tab"><img src="{{ url_for('static', filename='img/img2.jpg') }}" /></a></li>
+                            <li><a data-target="#pic-4" data-toggle="tab"><img src="{{ url_for('static', filename='img/img3.jpg') }}" /></a></li>
                             <li><a data-target="#pic-5" data-toggle="tab"><img src="{{ url_for('static', filename='img/picy.jpg') }}" /></a></li>
                           </ul>
             </div>
@@ -160,4 +160,10 @@
 </div> 
 <script type = "text/javascript" 
   src = "{{ url_for('static', filename = 'buypage.js') }}" ></script>
+<script>
+/* Initiate Magnify Function
+with the id of the image, and the strength of the magnifier glass:*/
+magnify("myimage0", 3);
+magnify("myimage1", 3);
+</script>
 {% endblock content %}

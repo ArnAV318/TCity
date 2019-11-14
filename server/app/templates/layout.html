@@ -42,25 +42,28 @@
                           </svg></a>
         </li>
     		<li class="nav-item ">
-      			<a class="nav-link tabby text-white" href="/memsite/try.php">Home</a>
+      			<a class="nav-link tabby text-white" href="{{url_for('homepage.homepage')}}">Home</a>
     		</li>
     		<li class="nav-item ">
-      			<a class="nav-link tabby text-white" href="#">Reviews</a>
+      			<a class="nav-link tabby text-white" href="{{url_for('resultpage.resultpage')}}">Products</a>
     		</li>
+    		
     		<li class="nav-item ">
-    		    <a class="nav-link tabby text-white" href="#">Previews</a>
+    		    <a class="nav-link tabby text-white" href="{{url_for('aboutpage.resultpage')}}">About</a>
     		</li>
-    		<li class="nav-item ">
-    		    <a class="nav-link tabby text-white" href="#">About</a>
+        <li class="nav-item ">
+    		    <a class="nav-link tabby text-white" href="{{url_for('loginpage.logout')}}">Logout</a>
     		</li>
+        
   		</ul>
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item" style="margin-top:5px;" >
-          <a class="nav-link text-white text2" href=""><i class="material-icons">person</i></a>
+          <a class="nav-link text-white text2" href="{{url_for('loginpage.loginpage')}}"><i class="material-icons">person</i></a>
         </li>
         <li class="nav-item" style="margin-top:5px;" >
-          <a class="nav-link text-white" href=""><i class="material-icons">shopping_cart</i></a> 
-        </li>  
+          <a class="nav-link text-white" href="{{url_for('cartpage.cartpage')}}"><i class="material-icons">shopping_cart</i></a> 
+        </li> 
+         
         
         <li class="nav-item">
 				  <form class="search-box">
