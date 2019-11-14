@@ -66,9 +66,9 @@
          
         
         <li class="nav-item">
-				  <form class="search-box">
-            <input type="text" name="" class="search-txt" placeholder="Type to search"/>
-            <a href="#" class="search-btn" >
+				  <form  id="formy" class="search-box" action="{{ url_for("resultpage.resultpage" ) }} " method="POST"> 
+            <input type="text" name="searchy" class="search-txt" placeholder="Type to search"/>
+            <a onclick="document.getElementById('formy').submit();" class="search-btn text-danger" >
               <i class="material-icons">search</i>
             </a>
           </form>

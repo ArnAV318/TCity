@@ -1,49 +1,13 @@
 <html>
 <head>
 <title>Login Form Design</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles/login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/register.css') }}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <body>
-    <div class="loginbox login" style="display:none;">
-    <img class ="avatar" src="{{ url_for('static', filename='img/avatar.png') }}">
-        <h1>Login Here</h1>
-        <form method="POST" >
-            <div class="form-group" >
-                    {{ form2.email.label(class="form-control-label") }}
-                    {% if form2.email.errors %}
-                        {{ form2.email(class="form-control form-control-lg is-invalid") }}
-                        <div class="invalid-feedback">
-                            {% for error in form2.email.errors %}
-                                <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        {{ form2.email(class="form-control form-control-lg") }}
-                    {% endif %}
-                </div>
-            
-            <div class="form-group">
-                    {{ form2.password.label(class="form-control-label") }}
-                    {% if form2.password.errors %}
-                        {{ form2.password(class="form-control form-control-lg is-invalid") }}
-                        <div class="invalid-feedback">
-                            {% for error in form2.password.errors %}
-                                <span>{{ error }}</span>
-                            {% endfor %}
-                        </div>
-                    {% else %}
-                        {{ form2.password(class="form-control form-control-lg") }}
-                    {% endif %}
-                </div>
-            <input type="submit" name="" value="Login">
-            <a class="clickety" href="{{url_for('loginpage.registrationpage')}}">Don't have an account?</a>
-        </form>
-        
-    </div>
+    
 
-    <div class="loginbox signup" style="display:block;">
-    {% inline">;">
+    <div class="loginbox signup">
     <img class ="avatar" src="{{ url_for('static', filename='img/avatar.png') }}">
         <h1>Login Here</h1>
         <form method="POST" action="">
@@ -127,15 +91,7 @@
         </form>
         
     </div>
-<script>
-    $(document).ready(function(){
-    $(".clickety").click(function(){
-        console.log("hi");
-      $(".login").toggle();
-      $(".signup").toggle();
-    });
-  });
-</script>
+
 
 </body>
 </head>

@@ -21,7 +21,7 @@ def registrationpage():
         print(u)
         
         return redirect(url_for('loginpage.loginpage'))
-    return render_template('login.html',form1=form1,form2=form2)
+    return render_template('register.html',form1=form1,form2=form2)
 
 @login.route('/login' ,methods=['GET', 'POST'])
 def loginpage():

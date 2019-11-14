@@ -77,13 +77,13 @@
       <p class="card-text">
         <span class="rating1">Price: Rs.{{product[0].price}}</span>
         <span class="rating2 ">
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star checked"></span>
-          <span class="fa fa-star"></span></span>
+          {% for b in product[2] %}
+          <span class="fa fa-star checked"></span>  
+          {% endfor %}
+          
+          </span>
       </p>
-      <a href="{{ url_for('buypage.buypage',prod= product[0].pid) }}" class="stretched-link gonow">Go now!</a>
+      <a href="{{ url_for('buypage.buypage',prod= product[0].pid,type= product[0].product_type) }}" class="stretched-link gonow">Go now!</a>
     </div>
   </div>
   {% endif %}
