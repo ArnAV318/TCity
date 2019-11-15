@@ -7,7 +7,7 @@ from app.models import Mobile_product,Tv_product,image_model
 @result.route('/resultpage' ,methods=["POST","GET"])
 def resultpage():
     query = request.form.get('searchy')
-    print(query)
+    print(type(query))
     page = request.args.get('page', 1, type=int)
     products=Mobile_product.query.order_by(desc(Mobile_product.rating)).paginate(page=page, per_page=6)
     pproducts=list(products.items)
