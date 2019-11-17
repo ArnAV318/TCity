@@ -186,7 +186,7 @@ class Tv_product(db.Model):
             'title':self.title,
             'price':self.price,
             'rating':self.rating,
-            'Brand' : self.brand,
+            'Brand' : self.Brand,
             'Model' :self.Model,
             'Model Name' : self.Model_Name,
             'Model Year' : self.Model_Year,

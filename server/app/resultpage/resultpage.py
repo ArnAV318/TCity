@@ -7,10 +7,20 @@ from app.models import Mobile_product,Tv_product,image_model
 @result.route('/resultpage' ,methods=["POST","GET"])
 def resultpage():
     query = request.form.get('searchy')
-    print(type(query))
+    
+
+
     page = request.args.get('page', 1, type=int)
-    products=Mobile_product.query.order_by(desc(Mobile_product.rating)).paginate(page=page, per_page=6)
-    pproducts=list(products.items)
+    if isinstance(query,str):
+        if query.lower()=="tv":
+            products=Tv_product.query.order_by(desc(Tv_product.rating)).paginate(page=page, per_page=6)
+            pproducts=list(products.items)
+        elif query.lower()=="mobile":
+            products=Mobile_product.query.order_by(desc(Mobile_product.rating)).paginate(page=page, per_page=6)
+            pproducts=list(products.items)
+    else:
+        products=Tv_product.query.order_by(desc(Tv_product.rating)).paginate(page=page, per_page=6)
+        pproducts=list(products.items)
     listy=[]
     for a in pproducts:
         star=[0]*int(a.rating)

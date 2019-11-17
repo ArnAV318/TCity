@@ -71,7 +71,7 @@
             <div >
               <span class="count"> Only 2 left</span>
               <span>
-              <button class="button" type="button" data-hover="Buy Now" data-active="IT'S FREE" onclick="location.href='{{ url_for('cartpage.cartpage') }}';"><span>Like it?</span></button>
+              <button class="button" type="button" data-hover="Buy Now" data-active="IT'S FREE" onclick="location.href='{{ url_for('cartpage.cartpage',userid=uid,productid=pid,type=ptype) }}';"><span>Like it?</span></button>
               </span>
             </div>
         </div>

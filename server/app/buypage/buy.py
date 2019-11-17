@@ -21,7 +21,9 @@ def buypage():
     product.pop('pid')
     product.pop('title')
     print(product)
+    uid=current_user.uid
+    print("hhii"+str(uid))
     stars=int(product['rating'])
-    return render_template('buypage.html', product=product, mproduct=mproduct,stars=stars, imgs=imgs, x=x)
+    return render_template('buypage.html', product=product, mproduct=mproduct,stars=stars, imgs=imgs, x=x,uid=uid,pid=productid,ptype=product_type)
 
 

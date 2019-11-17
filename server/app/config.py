@@ -6,7 +6,8 @@ class Config(object):
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'this-really-needs-to-be-changed'
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:1999@localhost:5432/traildb'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:1999@localhost:5432/tcity'
+    SQLALCHEMY_ECHO = True
 
 
 class ProductionConfig(Config):
